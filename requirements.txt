@@ -1,0 +1,13 @@
+ucimlrepo
+pandas
+scikit-learn
+matplotlib
+seaborn
+numpy
+scipy
+statsmodels
+torch
+torchvision
+torchaudio
+distinctipy
+jupyterlab
