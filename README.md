@@ -18,7 +18,7 @@ This project implements a shallow feedforward neural network for regression task
 ## 📁 Project Structure
 
 ```
-Landmine-FFNN/
+Parkinsons-FFNN/
 ├── config/
 │   ├── local.yaml              # Local training configuration
 │   └── prod.yaml               # Production configuration
@@ -274,7 +274,7 @@ IEEE Transactions on Biomedical Engineering
 **Repository:**
 ```
 Parkinson's FFNN Project
-https://github.com/your-username/Landmine-FFNN
+https://github.com/your-username/Parkinsons-FFNN
 ```
 
 ---
@@ -284,7 +284,7 @@ https://github.com/your-username/Landmine-FFNN
 ```bash
 # 1. Setup
 git clone <repository-url>
-cd Landmine-FFNN
+cd Parkinsons-FFNN
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
