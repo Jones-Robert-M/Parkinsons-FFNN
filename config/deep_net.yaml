@@ -1,0 +1,27 @@
+# Deep Network Configuration - More capacity, potentially better performance
+
+# Data configuration
+data:
+  path: "../data/raw/parkinsons_updrs.data"
+  target_cols:
+    - "motor_UPDRS"
+    - "total_UPDRS"
+  exclude_cols:
+    - "subject#"
+  test_size: 0.2
+  val_size: 0.1
+
+# Model architecture - Deeper network
+model:
+  hidden_dims: [128, 64, 32, 16]  # Deeper architecture
+  dropout_rate: 0.3  # Higher dropout to prevent overfitting
+  activation: "relu"
+
+# Training parameters
+training:
+  batch_size: 32
+  epochs: 200
+  learning_rate: 0.0005  # Lower LR for deeper network
+  weight_decay: 0.0001  # Higher regularization
+  patience: 20
+  seed: 42

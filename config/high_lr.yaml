@@ -1,0 +1,27 @@
+# High Learning Rate Configuration - Aggressive optimization
+
+# Data configuration
+data:
+  path: "../data/raw/parkinsons_updrs.data"
+  target_cols:
+    - "motor_UPDRS"
+    - "total_UPDRS"
+  exclude_cols:
+    - "subject#"
+  test_size: 0.2
+  val_size: 0.1
+
+# Model architecture
+model:
+  hidden_dims: [64, 32, 16]
+  dropout_rate: 0.2
+  activation: "relu"
+
+# Training parameters - High learning rate experiment
+training:
+  batch_size: 32
+  epochs: 150
+  learning_rate: 0.01  # 10x higher than default
+  weight_decay: 0.00001
+  patience: 15
+  seed: 42

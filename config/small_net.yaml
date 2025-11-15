@@ -1,0 +1,27 @@
+# Small Network Configuration - Faster training, fewer parameters
+
+# Data configuration
+data:
+  path: "../data/raw/parkinsons_updrs.data"
+  target_cols:
+    - "motor_UPDRS"
+    - "total_UPDRS"
+  exclude_cols:
+    - "subject#"
+  test_size: 0.2
+  val_size: 0.1
+
+# Model architecture - Small network
+model:
+  hidden_dims: [32, 16]  # Smaller architecture
+  dropout_rate: 0.1
+  activation: "relu"
+
+# Training parameters
+training:
+  batch_size: 64  # Larger batches for faster training
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  patience: 10
+  seed: 42
