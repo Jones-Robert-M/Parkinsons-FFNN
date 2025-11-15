@@ -11,3 +11,6 @@ torchvision
 torchaudio
 distinctipy
 jupyterlab
+pyyaml
+tqdm
+joblib
