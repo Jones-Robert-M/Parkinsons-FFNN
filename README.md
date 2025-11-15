@@ -404,7 +404,7 @@ IEEE Transactions on Biomedical Engineering
 **Repository:**
 ```
 Parkinson's FFNN Project
-https://github.com/your-username/Parkinsons-FFNN
+https://github.com/Jones-Robert-M/Parkinsons-FFNN
 ```
 
 ---
@@ -413,7 +413,7 @@ https://github.com/your-username/Parkinsons-FFNN
 
 ```bash
 # 1. Setup
-git clone <repository-url>
+git clone https://github.com/Jones-Robert-M/Parkinsons-FFNN
 cd Parkinsons-FFNN
 python -m venv .venv
 source .venv/bin/activate
